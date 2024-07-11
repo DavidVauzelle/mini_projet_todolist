@@ -21,8 +21,8 @@ $taches=$bdd->query($requete);
     <?php foreach($taches as $tache) : ?>
     <ul>
         <li>
-            <?php echo $tache['nom_tache']; ?>
-            <a href="traitementDelete.php?id=<?php echo $tache['id']; ?>">Supprimer</a>
+            <?= $tache['nom_tache']; ?>
+            <a href="traitementDelete.php?id=<?= $tache['id']; ?>">Supprimer</a>
         </li>
     </ul>    
     <?php endforeach; ?>

@@ -8,4 +8,6 @@ $password = '';
 $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
 
 // $dbh = new PDO($dsn, $user, $password, $options);
+
+// Version avec des variables pour pouvoir gérer les paramètres de connexion dynamiquement
 $bdd = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password, $options);
